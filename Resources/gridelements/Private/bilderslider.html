@@ -1,0 +1,53 @@
+{namespace m=Netthelp\nettgrids\ViewHelpers}
+<f:if condition="{data.header}">
+   <f:then><h2 class="pagetitle">{data.header}</h2></f:then>
+ </f:if>
+
+ <div class="flexslider udslider" id="flexslider{data.pid}" 
+   <f:if condition="{data.flexform_elementbreite}">
+     style="width: {data.flexform_elementbreite};  ">
+   </f:if>
+   <ul class="slides">
+
+    <f:for each="{m:explode(string: '{data.flexform_sliderImages}', delimiter:',')}" as="image" iteration="iterator">
+     <li> 
+       <div id="c{iterator.cycle}" class="frame frame-default frame-type-image frame-layout-0">
+        <div class="ce-image ce-center ce-above">
+         <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+          <div class="ce-outer">
+           <div class="ce-inner">     
+            <figure class="image">
+             <a class="lightbox" href="<f:uri.image src="{image}" treatIdAsReference="1"  maxWidth="800"  maxHeight="300" />"  rel="lightbox{data.uid}">
+              <f:image src="{image}" treatIdAsReference="1" height="{data.flexform_bildhoehe}" maxHeight="{data.flexform_bildhoehe}" />
+             </a>
+            </figure>     
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>     
+     </li>
+    </f:for>
+   </ul>
+ </div>
+ <script>
+  ( function($) {
+     $(document).ready(function()
+     {$('#flexslider{data.pid}').flexslider({
+         direction: <f:comment>wake up, fluid!</f:comment>"{data.flexform_direction}",
+         slideshowSpeed: {data.flexform_slidespeed},
+         animation: "{data.flexform_animation}",
+         animationSpeed: {data.flexform_animationspeed},
+         animationLoop: {data.flexform_animationloop},
+         useCSS: false,
+         controlNav: {data.flexform_showcontrolnav},
+         directionNav: {data.flexform_showdirnav},
+         pausePlay: {data.flexform_showpause},
+         pauseOnHover: {data.flexform_pauseonhover},
+         initDelay: {data.flexform_initdelay},
+         randomize: {data.flexform_randomize},
+         reverse: false
+  });
+  });
+    }) (jQuery);
+ </script>

@@ -1,0 +1,20 @@
+{namespace m=Netthelp\nettgrids\ViewHelpers}
+<f:if condition="{data.header}">
+   <f:then><h2 class="pagetitle">{data.header}</h2></f:then>
+ </f:if>
+
+ <div class="udgalerie" id="galerie{data.uid}" >
+   <div class="container-fluid">
+   <div class="row">
+<f:for each="{m:Verzeichnis(verzeichnis: '{data.flexform_imagefolder}')}" as="image" iteration="iterator">
+       <div id="c{iterator.cycle}" class="thumb col-xs-{SpalteXs} col-sm-{SpalteSn} col-md-{SpalteMd} col-lg-{SpalteLg}">
+             <a class="lightbox" href="<f:uri.image src="{image}" treatIdAsReference="1"  maxWidth="800"  maxHeight="300" />"  rel="lightbox{data.uid}">
+              <f:image src="{image}" treatIdAsReference="1" maxHeight="{data.flexform_ihoehe}" maxWidth="{data.flexform_ibreite}" class="img-responsive" />
+             </a>
+       </div>
+</f:for>
+  </div>
+  </div>
+ </div>
+
+

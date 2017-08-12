@@ -1,0 +1,20 @@
+{namespace m=Netthelp\nettgrids\ViewHelpers}
+<div id="tabs-{data.uid}" class="panel-group">
+    <ul class="nav nav-tabs">
+       <f:for each="{data.tx_gridelements_view_children}" as="content"       iteration="iterator">
+          <li class="{f:if(condition: iterator.isFirst, then: 'active')}">
+            <a data-toggle="tab" href="#t{content.uid}">
+              {f:if(condition: content.header, then: '{content.header}',  else: 'Tab{iterator.cycle}')}
+            </a>
+          </li>
+       </f:for>
+     </ul>
+
+     <div class="tab-content">
+       <f:for each="{data.tx_gridelements_view_children}" as="content"    iteration="iterator">
+         <div id="t{content.uid}" class="tab-pane fade {f:if(condition: iterator.isFirst, then: ' in active')}">
+               <m:Content uid="{content.uid}" />
+         </div>
+       </f:for>
+     </div>
+</div>

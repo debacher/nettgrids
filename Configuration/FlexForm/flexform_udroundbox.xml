@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <ROOT type="array">
+    <type>array</type>
+    <el type="array">
+      <bgcolor>
+        <TCEforms>
+          <label>Hintergrundfarbe (#eee wenn leer)</label>
+           <config>
+          <type>input</type>
+            <size>20</size>
+             <max>30</max>
+             <eval>trim</eval>
+         </config>
+        </TCEforms>
+      </bgcolor>
+      <bordercolor>
+        <TCEforms>
+          <label>Rahmenfarbe (#aaa wenn leer)</label>
+           <config>
+          <type>input</type>
+            <size>20</size>
+             <max>30</max>
+             <eval>trim</eval>
+         </config>
+        </TCEforms>
+      </bordercolor>
+      <borderradius>
+        <TCEforms>
+          <label>Rahmenradius (10px wenn leer)</label>
+           <config>
+          <type>input</type>
+            <size>20</size>
+             <max>30</max>
+             <eval>trim</eval>
+         </config>
+        </TCEforms>
+      </borderradius>
+    </el>
+  </ROOT>
+</T3DataStructure>

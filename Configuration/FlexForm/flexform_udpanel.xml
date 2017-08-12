@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+  <ROOT type="array">
+    <type>array</type>
+    <el type="array">
+      <headertext>
+        <TCEforms>
+          <label>Text der Panel Header-Zeile</label>
+           <config>
+          <type>input</type>
+            <size>30</size>
+             <max>90</max>
+             <eval>trim</eval>
+         </config>
+        </TCEforms>
+      </headertext>
+      <footertext>
+        <TCEforms>
+          <label>Text der Panel Footer-Zeile</label>
+           <config>
+          <type>input</type>
+            <size>30</size>
+             <max>90</max>
+             <eval>trim</eval>
+         </config>
+        </TCEforms>
+      </footertext>
+                 
+      <color type="array">
+         <TCEforms type="array">
+            <label>Stil des Panels</label>
+               <config type="array">
+                        <type>select</type>
+                        <default>default</default>
+                        <items type="array">
+                            <numindex index="0" type="array">
+                                <numindex index="0">Default (grau)</numindex>
+                                <numindex index="1">default</numindex>
+                            </numindex>
+                            <numindex index="1" type="array">
+                                <numindex index="0">Primary (blau)</numindex>
+                                <numindex index="1">primary</numindex>
+                            </numindex>
+                            <numindex index="2" type="array">
+                                <numindex index="0">Success (Grün)</numindex>
+                                <numindex index="1">success</numindex>
+                            </numindex>
+                            <numindex index="3" type="array">
+                                <numindex index="0">Info (hellblau)</numindex>
+                                <numindex index="1">info</numindex>
+                            </numindex>
+                            <numindex index="4" type="array">
+                                <numindex index="0">Warning (gelb)</numindex>
+                                <numindex index="1">warning</numindex>
+                            </numindex>
+                            <numindex index="5" type="array">
+                                <numindex index="0">Danger (rot)</numindex>
+                                <numindex index="1">danger</numindex>
+                            </numindex>
+                        </items>
+                        <minitems>0</minitems>
+                        <maxitems>1</maxitems>
+                        <size>1</size>
+                    </config>
+                </TCEforms>
+            </color>
+            
+    </el>
+  </ROOT>
+
+</T3DataStructure>

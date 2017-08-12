@@ -1,0 +1,23 @@
+{namespace m=Netthelp\nettgrids\ViewHelpers}
+<div id="accordion-{data.uid}" class="panel-group">
+   <f:for each="{data.tx_gridelements_view_children}" as="content"  iteration="iterator">
+      <div class="panel panel-default">
+         <div class="panel-heading" id="heading{content.uid}">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion{data.uid}" href="#collapse{content.uid}">
+                {f:if(condition: content.header, then: '{content.header}',  else: 'Element{iterator.cycle}')}
+                <i class="glyphicon glyphicon-menu-down pull-right"></i>
+              </a>
+            </h4>
+         </div>
+         <div id="collapse{content.uid}" class="panel-collapse collapse {f:if(condition: iterator.isFirst, then: 'in')}">
+           <div class="panel-body">
+             <m:content uid="{content.uid}" />
+           </div>
+         </div>
+      </div>
+   </f:for>
+</div>
+
+
+

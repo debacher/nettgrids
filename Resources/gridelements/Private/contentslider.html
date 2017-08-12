@@ -1,0 +1,35 @@
+{namespace m=Netthelp\nettgrids\ViewHelpers}
+<f:if condition="{data.header}">
+   <f:then><h2 class="pagetitle">{data.header}</h2></f:then>
+</f:if>
+<div class="flexslider" id="flexslider{data.uid}" style="width:{data.flexform_elementbreite};">
+  <ul class="slides">
+    <f:for each="{data.tx_gridelements_view_children}" as="content"  iteration="iterator">
+        <li><m:Content uid="{content.uid}" /></li>
+    </f:for>
+  </ul>
+</div>
+<script>
+  ( function($) {
+     $(document).ready(function() 
+     {$('#flexslider{data.uid}').flexslider({
+         <f:comment>wake up, fluid!</f:comment>
+         direction: "{data.flexform_direction}", 
+         slideshowSpeed: {data.flexform_slidespeed},
+         animation: "{data.flexform_animation}", 
+         animationSpeed: {data.flexform_animationspeed}, 
+         animationLoop: {data.flexform_animationloop}, 
+         useCSS: false,
+         controlNav: {data.flexform_showcontrolnav}, 
+         directionNav: {data.flexform_showdirnav}, 
+         pausePlay: {data.flexform_showpause}, 
+         pauseOnHover: {data.flexform_pauseonhover},
+         initDelay: {data.flexform_initdelay}, 
+         randomize: {data.flexform_randomize}, 
+         reverse: {data.flexform_reverse}
+  });
+  });
+    }) (jQuery);
+</script>
+
+

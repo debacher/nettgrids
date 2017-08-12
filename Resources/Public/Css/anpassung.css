@@ -1,0 +1,577 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('webfonts/ubuntu-light-webfont.eot');
+    src: url('webfonts/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntu-light-webfont.woff') format('woff'),
+         url('webfonts/ubuntu-light-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntu-light-webfont.svg#UbuntuLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('webfonts/ubuntu-lightitalic-webfont.eot');
+    src: url('webfonts/ubuntu-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntu-lightitalic-webfont.woff') format('woff'),
+         url('webfonts/ubuntu-lightitalic-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntu-lightitalic-webfont.svg#UbuntuLightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('webfonts/ubuntu-regular-webfont.eot');
+    src: url('webfonts/ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntu-regular-webfont.woff') format('woff'),
+         url('webfonts/ubuntu-regular-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntu-regular-webfont.svg#UbuntuRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('webfonts/ubuntu-italic-webfont.eot');
+    src: url('webfonts/ubuntu-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntu-italic-webfont.woff') format('woff'),
+         url('webfonts/ubuntu-italic-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntu-italic-webfont.svg#UbuntuItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('webfonts/ubuntu-medium-webfont.eot');
+    src: url('webfonts/ubuntu-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntu-medium-webfont.woff') format('woff'),
+         url('webfonts/ubuntu-medium-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntu-medium-webfont.svg#UbuntuMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('webfonts/ubuntu-mediumitalic-webfont.eot');
+    src: url('webfonts/ubuntu-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntu-mediumitalic-webfont.woff') format('woff'),
+         url('webfonts/ubuntu-mediumitalic-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntu-mediumitalic-webfont.svg#UbuntuMediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('webfonts/ubuntu-bold-webfont.eot');
+    src: url('webfonts/ubuntu-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntu-bold-webfont.woff') format('woff'),
+         url('webfonts/ubuntu-bold-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntu-bold-webfont.svg#UbuntuBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('webfonts/ubuntu-bolditalic-webfont.eot');
+    src: url('webfonts/ubuntu-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntu-bolditalic-webfont.woff') format('woff'),
+         url('webfonts/ubuntu-bolditalic-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntu-bolditalic-webfont.svg#UbuntuBoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'UbuntuCondensed';
+    src: url('webfonts/ubuntucondensed-regular-webfont.eot');
+    src: url('webfonts/ubuntucondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/ubuntucondensed-regular-webfont.woff') format('woff'),
+         url('webfonts/ubuntucondensed-regular-webfont.ttf') format('truetype'),
+         url('webfonts/ubuntucondensed-regular-webfont.svg#UbuntuCondensedRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+
+@media print {
+#header {display:none;}
+#navbar {display:none;}
+#service {display:none;}
+#rootline {display:none;}
+#menu-links {display:none;}
+}
+
+
+@media screen {
+
+/* vertikalen Scrollbar erzwingen */
+html {overflow-y: scroll;}
+
+body {
+ font-family: Ubuntu, 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+ font-size:14px;
+ color:#444;  
+ min-height: 101%;
+ background-color: #9E9E9E;
+}
+
+p {
+ -moz-hyphens: auto;
+ -ms-hyphens: auto;
+ -o-hyphens: auto;
+ -webkit-hyphens: auto;
+ hyphens: auto;
+}
+
+.container {
+ border: 5px solid #fff;
+ border-top: 0;
+}
+
+#skiplink {
+    color: white;
+    left: -1000em;
+    position: absolute;
+    width:100%
+}
+#skiplink a {
+    color: white;
+}
+.pfrechts {
+ border-style:solid;
+ height: 0;
+ width: 0;
+ border-width:4px; 
+ border-right-width:0;
+ border-color:transparent transparent transparent white;
+ content: " ";
+ display: inline-block;
+ margin-left: 2px;
+}
+
+#hauptinhalt > h1 {
+  margin-top: 0;
+  padding-top: 20px;
+
+}
+
+.table-cell {
+ display: table-cell;
+ float:none;
+}
+
+/* Spalten gleich hoch machen, siehe http://www.debacher.de/wiki/Spaltenlayout_mit_Bootstrap 
+   es gehört noch flex-direction: column in der Media-Query f. kleine Schirme dazu                   */
+
+.equalheight {
+  display: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  }
+  
+ .equal {
+  flex: 0 0 1;
+ }
+
+#header {
+ padding: 0;
+ background-color: #fff;
+}
+
+#headerimage {
+ height: 140px;
+ margin-left: -15px;
+ margin-right: -15px;
+ background-position: left top;
+}
+
+#inhalt {
+ background-color: white;
+}
+
+#hauptinhalt {
+ background-color: yellow; 
+ -webkit-order:2;
+ order:2;
+}
+
+#spalte-rechts {
+ background-color: #00ffff; 
+ -webkit-order:3;
+ order:3;
+}
+
+#spalte-links {
+ background-color: #00ffff; 
+ -webkit-order:1;
+ order:1;
+}
+
+#footer {
+ background-color:#0000ff; 
+ text-align: center; 
+ color:white; 
+ height:50px;
+ border: 0; 
+ border-top:1px solid #DDDDDD;
+}
+
+
+/* ##################################
+** ### DCE boxUD mit runden Ecken ###
+** ##################################
+*/ 
+.boxUD {
+ background-attachment: scroll;
+ background-clip: border-box;
+ background-color: transparent;
+ background-image: none;
+ background-origin: padding-box;
+ background-position: 0 0;
+ background-repeat: repeat;
+ background-size: auto auto;
+ display: block;
+ font-weight: normal;
+ margin-bottom: 1em;
+}
+
+.boxUDContent {
+ display:block; 
+ background:#eee; 
+ border:1px solid #aaa; 
+ border-radius: 10px;
+ padding:0.5em;
+}
+
+.boxUD h1 {
+ margin-top: 12px;
+}
+
+
+
+/* ############## rootline und service mit bootstrap ######### */
+.breadcrumb {
+ background-color: transparent;
+ border-radius: 0;
+ list-style: outside none none;
+ margin-bottom: 0;
+ padding-bottom: 4px;
+ padding-top: 4px;
+ padding-left: 2px;
+}
+
+#rootline {
+ margin-left: -15px;
+ margin-right: -15px;
+ padding-left: 4px;
+ text-align: left;
+ font-size: 13px;
+ background-color: #ff0000;
+}
+
+#rootline a {
+ color: white; 
+}
+
+#service {
+ margin-left: -15px;
+ margin-right: -15px;
+ background-color:#ff6600;
+ padding-right: 4px;
+ font-size:13px;
+ text-align: right;
+}
+
+#service a {
+ color: white; 
+}
+
+#service #jump   {
+  float: left;
+  left: 24px;
+  position: relative;
+  padding-top: 4px;
+  display: none;
+}
+
+#service #jump a span.caret {
+ float: none;
+}
+
+.breadcrumb > li + li:before {
+ color: white;
+ content: "|";
+}
+
+#rootline .breadcrumb > li + li::before {
+    content: "";
+    padding: 0 0 0 2px;
+}
+
+/* ################ menue-links ################# */
+
+#menu-links {
+ padding-top: 15px;
+ padding-bottom: 10px;
+ width:100%;
+}
+
+#menu-links li {
+ background-color: #99ffff;
+}
+
+.nav-stacked li a:hover {
+  text-decoration:underline;
+}
+
+.ebene1 {
+ font-size: 13px;
+}
+
+.nav-stacked li.ebene2 {
+ margin-left: 15px;
+ font-size: 11px;
+}
+
+.nav-stacked li.ebene3 {
+ margin-left:30px;
+ font-size: 9px;
+}
+
+/* die kleinen Pfeile */
+a span.caret {
+ float: right;
+}
+
+a span.caret.white {
+ color: white;
+}
+
+
+/* ############# neues Dropdown-Menu ################## */
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: 20px;
+}
+
+.navbar-header {
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.navbar-default .navbar-brand {
+  height: 26px;
+  display: none;
+  color: white;
+}
+
+.navbar-default {
+ background-color: #0e3e65;  /* nicht alle Browser kennen linear-gradient */
+ background: linear-gradient(to bottom, #00335c 0%, #0e3e65 50%, #718da4 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ margin-left: -15px;
+ margin-right: -15px;
+ border: 0;
+ font-size: 14px;
+}
+ 
+.navbar-default .navbar-nav > li > a {
+ color: white;
+ border-radius: 4px;
+}
+ 
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+ color: #ae0001;
+ background-color: #ddd;
+ text-decoration: underline;
+}
+ 
+.navbar-default .navbar-toggle {
+ border-color: white;
+}
+
+.navbar-nav {
+ display: inline-block;
+ float: none;
+ height: 24px;
+}
+
+.navbar-nav a.active {
+ background-color: #557364;
+ background: -moz-linear-gradient(top, #557364 0%, #70897c 50%, #99aba2 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#557364), color-stop(50%,#70897c), color-stop(100%,#99aba2));
+ background: -webkit-linear-gradient(top, #557364 0%,#70897c 50%,#99aba2 100%);
+ background: -o-linear-gradient(top, #557364 0%,#70897c 50%,#99aba2 100%);
+ background: -ms-linear-gradient(top, #557364 0%,#70897c 50%,#99aba2 100%);
+ background: linear-gradient(to bottom, #557364 0%,#70897c 50%,#99aba2 100%);
+}
+
+.navbar-nav > li > a {
+ padding-bottom: 5px; 
+ padding-top: 5px;    
+}
+ 
+.dropdown-menu > li.kopie > a {
+    padding-left:5px;
+}
+
+.dropdown-submenu {
+    position:relative;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;
+   -moz-border-radius:0 6px 6px 6px;
+   border-radius:0 6px 6px 6px;
+ }
+
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;
+  height: 0;
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
+
+li.dropdown > a.dropdown-toggle:hover {
+  text-decoration: none;
+}
+
+/* Anpassungen von U.D. für die Lightbox magnific-popup */  
+.mfp-figure figure {  
+    background-color: white;  
+    padding-left: 10px;  
+    padding-right: 10px;  
+}  
+.mfp-image-holder .mfp-close {  
+ color: #000;  
+ font-size: 40px;  
+ cursor: pointer;  
+ padding-right: 10px;  
+}  
+  
+.mfp-title {  
+    color: #000;  
+    padding-left: 10px;  
+}  
+.mfp-counter {  
+    color: #000;  
+    padding-right: 20px;  
+}  
+
+.udgalerie .thumb {
+  padding: 5px;
+/*  background-color: white;
+  border: 4px solid white; */
+}
+
+.udgalerie .img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+@media (max-width: 767px) {
+ .equal {
+    width: 100%;
+ }
+ .equalheight {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+ }
+ #hauptinhalt {
+  -webkit-order:0;
+  order:0;
+}
+#service {
+ font-size: 16px;
+}
+#service #jump  {
+ display: inherit;
+}
+
+}
+
+
+@media (max-width: 767px) {
+  .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #333;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red; 
+   }
+   #rootline {
+     display: none;
+   }
+ }
+   
+
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------------------------------*/
+

@@ -1,0 +1,21 @@
+<f:if condition="{data.header}">
+   <f:then><h2 class="pagetitle">{data.header}</h2></f:then>
+</f:if>
+
+<div class="udpanel">      
+  <div class="panel panel-{data.flexform_color}">
+   <f:if condition="{data.flexform_headertext}">
+    <f:then><div class="panel-heading">{data.flexform_headertext}</div></f:then>
+    <f:else><div class="panel-heading">&nbsp;</div></f:else>
+   </f:if>
+
+   <div class="panel-body">
+        {data.tx_gridelements_view_column_110->f:format.raw()}
+   </div>
+    
+   <f:if condition="{data.flexform_footertext}">
+    <f:then><div class="panel-footer">{data.flexform_footertext}</div></f:then>
+   </f:if>
+
+  </div>
+</div>

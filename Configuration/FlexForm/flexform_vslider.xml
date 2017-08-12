@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Animation</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <direction type="array">
+                        <TCEforms type="array">
+                            <label>Richtung</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">vertical</numIndex>
+                                        <numIndex index="1">vertical</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">horizontal</numIndex>
+                                        <numIndex index="1">horizontal</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </direction>
+                    <slidespeed type="array">
+                        <TCEforms type="array">
+                            <label>Geschwindigkeit</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>5</size>
+                                <max>8</max>
+                                <default>4000</default>
+                                <range>
+                                    <lower>500</lower>
+                                </range>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </slidespeed>
+                    <animation type="array">
+                        <TCEforms type="array">
+                            <label>Animationsart</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">fade</numIndex>
+                                        <numIndex index="1">fade</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">slide</numIndex>
+                                        <numIndex index="1">slide</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </animation>
+                    <animationspeed type="array">
+                        <TCEforms type="array">
+                            <label>Animations Geschwindigkeit</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>5</size>
+                                <max>8</max>
+                                <default>600</default>
+                                <range>
+                                    <lower>100</lower>
+                                </range>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </animationspeed>
+
+
+<imagefolder>
+ <TCEforms>
+  <label>Ordner mit den anzuzeigenden Bildern</label>
+  <config>
+   <type>group</type>
+   <internal_type>folder</internal_type>
+   <maxitems>1</maxitems>
+   <size>1</size>
+  </config>
+ </TCEforms>
+</imagefolder>
+
+
+
+
+                </el>
+            </ROOT>
+        </sDEF>
+        <scontrols>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Steuerung</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <showcontrolnav type="array">
+                        <TCEforms type="array">
+                            <label>Zeige Steuerung</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">ja</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">nein</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </showcontrolnav>
+                    <showdirnav type="array">
+                        <TCEforms type="array">
+                            <label>Zeige Richtungswahl</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">nein</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">ja</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </showdirnav>
+                    <showpause type="array">
+                        <TCEforms type="array">
+                            <label>Zeige Pause</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">nein</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">ja</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </showpause>
+                    <pauseonhover type="array">
+                        <TCEforms type="array">
+                            <label>Pause bei Maus-Over</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">ja</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">nein</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </pauseonhover>
+                </el>
+            </ROOT>
+        </scontrols>
+        <soptions>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Optionen</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <initdelay type="array">
+                        <TCEforms type="array">
+                            <label>Anfangsverzögerung</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>5</size>
+                                <default>0</default>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </initdelay>
+                    <randomize type="array">
+                        <TCEforms type="array">
+                            <label>Zufalls-Reihenfolge</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">nein</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">ja</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </randomize>
+                    <animationloop type="array">
+                        <TCEforms type="array">
+                            <label>Animation unendlich</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">ja</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">nein</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </animationloop>
+                    <reverse type="array">
+                        <TCEforms type="array">
+                            <label>Umgekehrte Richtung</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">nein</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">ja</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </reverse>
+
+                    <elementbreite type="array">
+                        <TCEforms type="array">
+                            <label>Breite des Elements mit Einheit (Pixel oder %)</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>5</size>
+                                <max>8</max>
+                                <default>100%</default>
+                                <eval>trim,required</eval>
+                            </config>
+                        </TCEforms>
+                    </elementbreite>
+
+                    <bildhoehe type="array">
+                        <TCEforms type="array">
+                            <label>Höhe der Bilder in px</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>5</size>
+                                <max>8</max>
+                                <default>300</default>
+                                <eval>trim,int</eval>
+                            </config>
+                        </TCEforms>
+                    </bildhoehe>
+                    
+                </el>
+            </ROOT>
+        </soptions>
+    </sheets>
+</T3DataStructure>

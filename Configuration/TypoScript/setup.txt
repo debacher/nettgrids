@@ -1,0 +1,198 @@
+tt_content.gridelements_pi1.20.10.setup {
+
+  udpanel < lib.gridelements.defaultGridSetup
+  udpanel {
+   cObject = FLUIDTEMPLATE
+   cObject.file = EXT:nettgrids/Resources/gridelements/Private/udpanel.html
+  }
+
+  galerie < lib.gridelements.defaultGridSetup
+  galerie {
+   cObject = FLUIDTEMPLATE
+   cObject {
+      file = EXT:nettgrids/Resources/gridelements/Private/verzeichnisgalerie.html
+      variables {
+        SpalteMd = TEXT
+        SpalteMd.data = field:flexform_cols
+        SpalteMd.split {
+          token = -
+          returnKey = 1
+          cObjNum = 1
+          1.current = 1   
+        }
+        SpalteSm = TEXT
+        SpalteSm.data = field:flexform_cols
+        SpalteSm.split {
+          token = -
+          returnKey = 2
+          cObjNum = 1
+          1.current = 1   
+        }
+        SpalteXs = TEXT
+        SpalteXs.data = field:flexform_cols
+        SpalteXs.split {
+          token = -
+          returnKey = 3
+          cObjNum = 1
+          1.current = 1   
+        }
+        SpalteLg = TEXT
+        SpalteLg.data = field:flexform_cols
+        SpalteLg.split {
+          token = -
+          returnKey = 0
+          cObjNum = 1
+          1.current = 1   
+        }
+      }
+    }
+  }
+
+  verzeichnisslider < lib.gridelements.defaultGridSetup
+  verzeichnisslider {
+   cObject = FLUIDTEMPLATE
+   cObject.file = EXT:nettgrids/Resources/gridelements/Private/verzeichnisslider.html
+  }
+
+  bilderslider < lib.gridelements.defaultGridSetup
+  bilderslider {
+   cObject = FLUIDTEMPLATE
+   cObject.file = EXT:nettgrids/Resources/gridelements/Private/bilderslider.html
+  }
+
+  contentslider < lib.gridelements.defaultGridSetup
+  contentslider {
+   cObject = FLUIDTEMPLATE
+   cObject.file = EXT:nettgrids/Resources/gridelements/Private/contentslider.html
+  }  
+
+  tabs < lib.gridelements.defaultGridSetup
+  tabs {
+   cObject = FLUIDTEMPLATE
+   cObject.file = EXT:nettgrids/Resources/gridelements/Private/tabs.html
+  }
+
+  udroundbox < lib.gridelements.defaultGridSetup
+  udroundbox {
+   cObject = FLUIDTEMPLATE
+   cObject.file = EXT:nettgrids/Resources/gridelements/Private/udroundbox.html
+  }
+
+  accordion < lib.gridelements.defaultGridSetup
+  accordion {
+    cObject = FLUIDTEMPLATE
+    cObject.file = EXT:nettgrids/Resources/gridelements/Private/accordion.html
+  }
+
+  spalten2 < lib.gridelements.defaultGridSetup
+  spalten2 {
+    cObject = FLUIDTEMPLATE
+    cObject {     
+      file = EXT:nettgrids/Resources/gridelements/Private/grid2col.html       
+      variables {
+        SpalteLinks = TEXT
+        SpalteLinks.data = field:flexform_cols
+        SpalteLinks.split {
+          token = -
+          returnKey = 0
+          cObjNum = 1
+          1.current = 1
+        }         
+        SpalteRechts = TEXT
+        SpalteRechts.data = field:flexform_cols
+        SpalteRechts.split {
+          token = -
+          returnKey = 1
+          cObjNum = 1
+          1.current = 1   
+        }
+      }
+    }
+  }  
+
+  spalten3 < lib.gridelements.defaultGridSetup
+  spalten3 {
+    cObject = FLUIDTEMPLATE
+    cObject {     
+      file = EXT:nettgrids/Resources/gridelements/Private/grid3col.html       
+      variables {
+        SpalteLinks = TEXT
+        SpalteLinks.data = field:flexform_cols
+        SpalteLinks.split {
+          token = -
+          returnKey = 0
+          cObjNum = 1
+          1.current = 1
+        }         
+        SpalteMitte = TEXT
+        SpalteMitte.data = field:flexform_cols
+        SpalteMitte.split {
+          token = -
+          returnKey = 1
+          cObjNum = 1
+          1.current = 1         
+        }
+        SpalteRechts = TEXT
+        SpalteRechts.data = field:flexform_cols
+        SpalteRechts.split {
+          token = -
+          returnKey = 2
+          cObjNum = 1
+          1.current = 1           
+        }         
+      }
+    }
+  }      
+
+  spalten4 < lib.gridelements.defaultGridSetup
+  spalten4 {
+    cObject = FLUIDTEMPLATE
+    cObject {       
+      file = EXT:nettgrids/Resources/gridelements/Private/grid4col.html
+      variables {
+        SpalteLinks = TEXT
+        SpalteLinks.data = field:flexform_cols
+        SpalteLinks.split {
+          token = -
+          returnKey = 0
+          cObjNum = 1
+          1.current = 1
+        }         
+        SpalteMitteLinks = TEXT
+        SpalteMitteLinks.data = field:flexform_cols
+        SpalteMitteLinks.split {
+          token = -
+          returnKey = 1
+          cObjNum = 1
+          1.current = 1         
+        }
+        SpalteMitteRechts = TEXT
+        SpalteMitteRechts.data = field:flexform_cols
+        SpalteMitteRechts.split {
+          token = -
+          returnKey = 2
+          cObjNum = 1
+          1.current = 1           
+        }
+        SpalteRechts = TEXT
+        SpalteRechts.data = field:flexform_cols
+        SpalteRechts.split {
+          token = -
+          returnKey = 3
+          cObjNum = 1
+          1.current = 1          
+        }         
+      }
+    }
+  }        
+
+} #tt_content
+
+[globalVar = LIT:1 = {$plugin.nettgrids.config.flexslider}]
+page {
+    includeCSS.flexslider2 = EXT:nettgrids/Resources/gridelements/Public/Flexslider2/flexslider.css
+    includeJSFooterlibs.flexslider2 = EXT:nettgrids/Resources/gridelements/Public/Flexslider2/jquery.flexslider-min.js
+}
+[global]
+
+

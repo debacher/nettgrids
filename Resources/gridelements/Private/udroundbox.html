@@ -1,0 +1,26 @@
+<f:if condition="{data.header}">
+   <f:then><h2 class="pagetitle">{data.header}</h2></f:then>
+</f:if>
+
+<div class="boxUD">      
+  <div class="boxUDContent" style="
+   <f:if condition="{data.flexform_bordercolor}">
+    <f:then>border-color: {data.flexform_bordercolor};</f:then>
+    <f:else>border-color: #aaa;</f:else>
+   </f:if>
+    
+   <f:if condition="{data.flexform_bgcolor}">
+    <f:then>background-color: {data.flexform_bgcolor};</f:then>
+    <f:else>background-color: #eee;</f:else>    
+   </f:if>
+    
+   <f:if condition="{data.flexform_borderradius}">
+    <f:then>border-radius: {data.flexform_borderradius};</f:then>
+    <f:else>border-radius: 10px;</f:else>    
+   </f:if>
+  ">
+      <f:format.raw>
+        {data.tx_gridelements_view_column_110->f:format.raw()}
+      </f:format.raw> 
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<f:if condition="{data.header}">
+   <f:then><h2 class="pagetitle">{data.header}</h2></f:then>
+</f:if>
+
+<div class="row"> 
+  <div class="col-md-{SpalteLinks}">
+    <f:format.raw>{data.tx_gridelements_view_column_110}</f:format.raw>
+  </div>
+  <div class="col-md-{SpalteMitteLinks}">
+    <f:format.raw>{data.tx_gridelements_view_column_111}</f:format.raw>
+  </div>
+  <div class="col-md-{SpalteMitteRechts}">
+    <f:format.raw>{data.tx_gridelements_view_column_112}</f:format.raw>
+  </div>
+  <div class="col-md-{SpalteRechts}">
+    <f:format.raw>{data.tx_gridelements_view_column_113}</f:format.raw>
+  </div>
+</div>

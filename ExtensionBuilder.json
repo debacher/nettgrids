@@ -1,0 +1,49 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.6.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "de",
+            "state": "alpha",
+            "targetVersion": "8.6.0-8.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "nettgrids",
+        "name": "Netthelp Grids",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Sch\u00fclerfirma Netthelp",
+                "email": "typo3@debacher.de",
+                "name": "Uwe Debacher",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "nettgrids",
+                "name": "nettgrids"
+            }
+        ],
+        "vendorName": "Netthelp"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-07-20 03:07",
+        "extension_builder_version": "8.6.0",
+        "be_user": "Uwe Debacher (2)"
+    }
+}

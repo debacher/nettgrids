@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+     
+    <ROOT type="array">
+        <type>array</type>
+        <el type="array">
+            <cols type="array">
+                <TCEforms type="array">
+                    <label>Spaltenverhältnis in %</label>
+                    <config type="array">
+                        <type>select</type>
+                        <default>6-6</default>
+                        <items type="array">
+                            <numindex index="0" type="array">
+                                <numindex index="0">8 / 92</numindex>
+                                <numindex index="1">1-11</numindex>
+                            </numindex>
+                            <numindex index="1" type="array">
+                                <numindex index="0">17 / 83</numindex>
+                                <numindex index="1">2-10</numindex>
+                            </numindex>
+                            <numindex index="2" type="array">
+                                <numindex index="0">25 / 75</numindex>
+                                <numindex index="1">3-9</numindex>
+                            </numindex>
+                            <numindex index="3" type="array">
+                                <numindex index="0">33 / 66</numindex>
+                                <numindex index="1">4-8</numindex>
+                            </numindex>
+                            <numindex index="4" type="array">
+                                <numindex index="0">42 / 58</numindex>
+                                <numindex index="1">5-7</numindex>
+                            </numindex>
+                            <numindex index="5" type="array">
+                                <numindex index="0">50 / 50</numindex>
+                                <numindex index="1">6-6</numindex>
+                            </numindex>
+                            <numindex index="6" type="array">
+                                <numindex index="0">58 / 42</numindex>
+                                <numindex index="1">7-5</numindex>
+                            </numindex>
+                            <numindex index="7" type="array">
+                                <numindex index="0">66 / 33</numindex>
+                                <numindex index="1">8-4</numindex>
+                            </numindex>
+                            <numindex index="8" type="array">
+                                <numindex index="0">75 / 25</numindex>
+                                <numindex index="1">9-3</numindex>
+                            </numindex>
+                            <numindex index="9" type="array">
+                                <numindex index="0">83 / 17</numindex>
+                                <numindex index="1">10-2</numindex>
+                            </numindex>
+                            <numindex index="10" type="array">
+                                <numindex index="0">92 / 8</numindex>
+                                <numindex index="1">11-1</numindex>
+                            </numindex>                                                  
+                        </items>
+                        <minitems>0</minitems>
+                        <maxitems>1</maxitems>
+                        <size>1</size>
+                    </config>
+                </TCEforms>
+            </cols>
+        </el>                       
+    </ROOT>
+</T3DataStructure>
